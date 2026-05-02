@@ -1,47 +1,47 @@
 @font-face {
     font-family: HNBL;
-    src: url(/font/HNBL.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/HNBL.woff2) format("woff2");
 }
 @font-face {
     font-family: NPlates;
-    src: url(/font/DMSansSemiBold.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/DMSansSemiBold.woff2) format("woff2");
     font-weight: 400;
 }
 @font-face {
     font-family: Su;
-    src: url(/font/Su.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/Su.woff2) format("woff2");
     font-weight: 400;
 }
 @font-face {
     font-family: SGPHW;
-    src: url(/font/SG-PHWEB.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/SG-PHWEB.woff2) format("woff2");
     font-weight: 400;
 }
 @font-face {
     font-family: MCR;
-    src: url(/font/MCR.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/MCR.woff2) format("woff2");
     font-weight: 400;
 }
 @font-face {
     font-family: DinPro;
-    src: url(/font/DINPror-Bold.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/DINPror-Bold.woff2) format("woff2");
     font-weight: 700;
 }
 @font-face {
     font-family: Naruto;
-    src: url(/font/njnaruto.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/njnaruto.woff2) format("woff2");
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: Pubg;
-    src: url(/font/pubg.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/pubg.woff2) format("woff2");
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: PokemonElements;
-    src: url(/font/LexendDeca-Regular.woff2) format("woff2");
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/LexendDeca-Regular.woff2) format("woff2");
     font-style: normal;
 }
 @font-face {
@@ -60,65 +60,65 @@
 @font-face {
     font-family: Blueberryn;
     src:
-        url(/font/Blueberryn.woff2) format("woff2"),
-        url(/font/Blueberryn.woff) format("woff"),
-        url(/font/Blueberryn.ttf) format("truetype");
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/Blueberryn.woff2) format("woff2"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/Blueberryn.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/Blueberryn.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: Oxygen;
-    src: url(/font/oxygen-webfont.eot);
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-webfont.eot);
     src:
-        url(font/oxygen-webfont.eot?#iefix) format("embedded-opentype"),
-        url(/font/oxygen-webfont.woff) format("woff"),
-        url(/font/oxygen-webfont.ttf) format("truetype"),
-        url(/font/oxygen-webfont.svg#oxygenregular) format("svg");
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-webfont.eot?#iefix) format("embedded-opentype"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-webfont.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-webfont.ttf) format("truetype"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-webfont.svg#oxygenregular) format("svg");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: Oxygen;
-    src: url(/font/oxygen-bold-webfont.eot);
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bold-webfont.eot);
     src:
-        url(/font/oxygen-bold-webfont.eot?#iefix) format("embedded-opentype"),
-        url(/font/oxygen-bold-webfont.woff) format("woff"),
-        url(/font/oxygen-bold-webfont.ttf) format("truetype"),
-        url(/font/oxygen-bold-webfont.svg#oxygenregular) format("svg");
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bold-webfont.eot?#iefix) format("embedded-opentype"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bold-webfont.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bold-webfont.ttf) format("truetype"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bold-webfont.svg#oxygenregular) format("svg");
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: Oxygen;
-    src: url(/font/oxygen-italic-webfont.eot);
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-italic-webfont.eot);
     src:
-        url(font/oxygen-italic-webfont.eot?#iefix) format("embedded-opentype"),
-        url(/font/oxygen-italic-webfont.woff) format("woff"),
-        url(/font/oxygen-italic-webfont.ttf) format("truetype"),
-        url(font/oxygen-italic-webfont.svg#oxygenregular) format("svg");
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-italic-webfont.eot?#iefix) format("embedded-opentype"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-italic-webfont.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-italic-webfont.ttf) format("truetype"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-italic-webfont.svg#oxygenregular) format("svg");
     font-weight: 400;
     font-style: italic;
 }
 @font-face {
     font-family: Oxygen;
-    src: url(/font/oxygen-bolditalic-webfont.eot);
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bolditalic-webfont.eot);
     src:
-        url(/font/oxygen-bolditalic-webfont.eot?#iefix)
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bolditalic-webfont.eot?#iefix)
             format("embedded-opentype"),
-        url(/font/oxygen-bolditalic-webfont.woff) format("woff"),
-        url(/font/oxygen-bolditalic-webfont.ttf) format("truetype"),
-        url(/font/oxygen-bolditalic-webfont.svg#oxygenregular) format("svg");
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bolditalic-webfont.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bolditalic-webfont.ttf) format("truetype"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/oxygen-bolditalic-webfont.svg#oxygenregular) format("svg");
     font-weight: 700;
     font-style: italic;
 }
 @font-face {
     font-family: YanoneKaffeesatzBold;
-    src: url(/font/YanoneKaffeesatz-Bold-webfont.eot);
+    src: url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/YanoneKaffeesatz-Bold-webfont.eot);
     src:
-        url(/font/YanoneKaffeesatz-Bold-webfont.eot?#iefix)
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/YanoneKaffeesatz-Bold-webfont.eot?#iefix)
             format("embedded-opentype"),
-        url(/font/YanoneKaffeesatz-Bold-webfont.woff) format("woff"),
-        url(/font/YanoneKaffeesatz-Bold-webfont.ttf) format("truetype");
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/YanoneKaffeesatz-Bold-webfont.woff) format("woff"),
+        url(https://cdn.jsdelivr.net/gh/piattosph/assets/font/YanoneKaffeesatz-Bold-webfont.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
@@ -1532,7 +1532,7 @@ button {
     vertical-align: middle;
 }
 .arrow {
-    background-image: url(/images/arroww.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/arroww.png);
     background-size: 20px 20px;
     float: right;
     height: 20px;
@@ -2650,7 +2650,7 @@ table {
     inset: 0;
     position: absolute;
     height: 100%;
-    background: url(../images/splashpw.jpg) no-repeat center center fixed;
+    background: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/splashpw.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2664,7 +2664,7 @@ table {
     position: relative;
 }
 .sbtt {
-    background: url(../images/splashpw.jpg) no-repeat center center fixed;
+    background: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/splashpw.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -4066,7 +4066,7 @@ col {
 }
 .winning-pattern {
     animation: winningPatternAnimation 1.5s infinite alternate;
-    background-image: url(/images/brushwin.webp) !important;
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/brushwin.webp) !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: 120% 120% !important;
@@ -4392,7 +4392,7 @@ col {
 }
 .winning-pattern55 {
     animation: winningPatternAnimation 1.5s infinite alternate;
-    background-image: url(/images/wp.png) !important;
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/wp.png) !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: 120% !important;
@@ -5353,7 +5353,7 @@ col {
 }
 .plus {
     position: relative;
-    background-image: url(/images/add.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/add.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--main-text-color);
@@ -5438,7 +5438,7 @@ select.bingoselect {
     }
 }
 .containerz {
-    background-image: url(/images/spin.webp);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/spin.webp);
     background-size: 101% 100%;
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -5461,7 +5461,7 @@ select.bingoselect {
     margin: 10px 70px;
 }
 .square {
-    background-image: url(/images/gift.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/gift.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #fff0;
@@ -5652,7 +5652,7 @@ select.bingoselect {
     cursor: pointer;
 }
 .small-checkbox:checked {
-    background-image: url(/images/wp.png) !important;
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/wp.png) !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: 120% !important;
@@ -6348,7 +6348,7 @@ select.bingoselect {
     border: 1px solid #f90;
 }
 .bet-input {
-    background-image: url(/images/blackc.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/blackc.png);
     background-repeat: no-repeat;
     background-size: 15% 30%;
     background-position: 60px center;
@@ -6667,7 +6667,7 @@ select.bingoselect {
     margin: auto;
 }
 .xpw {
-    background-image: url(/images/favico.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/favico.svg);
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: 100% 15%;
@@ -7590,7 +7590,7 @@ img.mlbb-kalaban {
     background: #000;
     max-width: 640px;
     width: auto;
-    background-image: url(/images/bg-1.webp);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/bg-1.webp);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: auto;
@@ -9487,7 +9487,7 @@ h5 {
 .badge-1st {
     border: 2px solid #ffd700;
     background-color: gold;
-    background-image: url(/images/1st.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/1st.svg);
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
@@ -9496,7 +9496,7 @@ h5 {
 .badge-2nd {
     background-color: #fff;
     border: 2px solid #fff;
-    background-image: url(/images/2nd.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/2nd.svg);
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
@@ -9505,7 +9505,7 @@ h5 {
 .badge-3rd {
     background-color: #cd7f32;
     border: 2px solid #cd7f32;
-    background-image: url(/images/3rd.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/piattosph/assets/images/3rd.svg);
     background-repeat: no-repeat;
     background-size: 110% 110%;
     background-position: center;
