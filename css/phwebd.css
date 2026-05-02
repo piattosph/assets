@@ -1,0 +1,183 @@
+
+		/* --- Default (Mobile) Styles --- */
+		.desktop-nav-left {
+			display: none; 
+		}
+		
+	.desktop-nav-right{
+	  
+	display: none;   
+	  
+	}
+		
+
+		
+		
+		/* Your original mobile fixed header styles */
+	
+
+		
+		/* --- Desktop Styles --- */
+@media (min-width: 800px) {
+    
+    .nfnfnhtml { 
+        background-color: var(--d-bg-c2);
+    }
+
+
+    body {
+
+        display: flex;
+        flex-direction: row;
+        
+
+        justify-content: center;
+        align-items: flex-start;
+        
+
+        width: 100%;
+        max-width: 100%; 
+        margin: 0;
+        padding: 0; /* Remove the 200px padding */
+        background-color: var(--d-bg-c2);
+    }
+
+
+    .desktop-nav-left {
+
+        width: 200px;
+        min-width: 200px; 
+        height: calc(100vh - 48px); 
+        
+
+        position: sticky;
+        top: 0;
+        
+     margin: 0; 
+        
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        background-color: var(--d-ln-bg);
+        border-right: 1px solid var(--d-ln-border);
+        padding-top: 60px;
+        z-index: 900;
+    }
+
+
+    .desktop-nav-left a {
+        display: flex;
+        padding: 0 0 0 16px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: var(--d-ln-color);
+        width: 80%;
+    }
+    .desktop-nav-left a:hover { background-color: #f0f0f0; }
+    .desktop-nav-left span { display: flex; align-items: center; justify-content: center; padding: 10px; font-weight: bold; }
+    .desktop-nav-left a img { border-radius: 50%; width: 30px; height: 30px; }
+    .desktop-nav-left a svg { width: 28px; height: 28px; }
+
+
+    .desktop-nav-right {
+        width: 200px;
+        min-width: 200px;
+        height: calc(100vh - 48px); 
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; /* Sticks below header */
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: flex-start; 
+        align-items: center;
+        
+        overflow-y: auto;
+        background-color: var(--d-ln-bg);
+        
+        /* Border Left instead of Right */
+        border-left: 1px solid var(--d-ln-border); 
+        padding-top:55px;
+        z-index: 900;
+    }
+    
+    /* Copy styling from Left Nav or customize */
+    .desktop-nav-right .content {
+        
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+  .desktop-nav-right a {
+        display: flex;
+        padding: 0 0 0 50px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: var(--d-ln-color);
+        width:80%;
+    }
+    .desktop-nav-right a:hover { background-color: #f0f0f0; }
+    .desktop-nav-right span { display: flex; align-items: center; justify-content: center; padding: 10px; font-weight: bold; }
+    .desktop-nav-right a img { border-radius: 50%; width: 30px; height: 30px; }
+    .desktop-nav-left a svg { width: 28px; height: 28px; }
+
+
+
+
+
+
+    /* 3. MAIN CONTENT (The Right Column) */
+    .main-content-area {
+        /* This box sits strictly to the right of the sticky sidebar */
+        width: 100%;
+        max-width: 640px; /* Your requested width */
+        
+        /* Flexbox handles the centering, so margin:0 is fine */
+        margin: 0; 
+        display: block;
+        position: relative;
+    }
+    
+    /* 4. HEADER (Sticky on top of content) */
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width:1280px;
+        height: 48px;
+        z-index: 999;
+        background-color: #f6f6f6;
+        border-bottom: 1px solid #eee;
+        padding: 0 20px;
+        box-sizing: border-box;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Reset Wrapper */
+    .phw-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Content Padding */
+    .content-m {
+        padding-top: 48px;
+        width: 100%;
+    }
+    
+    /* Utilities */
+    .tft { display: none !important; }
+    #popupMenu { left: auto !important; }
+}
+		
+	

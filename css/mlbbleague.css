@@ -1,0 +1,218 @@
+.containerw {
+    max-width: 500px;
+    margin: auto;
+    padding: 5px;
+}
+.headerwr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+
+}
+
+/* shared team style */
+.teamwr {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    min-width: 120px;
+    text-align: center;
+    
+}
+
+/* LEFT TEAM (rounded left only) */
+.teamAwr {
+    background: linear-gradient(135deg, #eee, #eee);
+    border-radius: 12px 0 0 12px;
+    border: 1px solid #ccc;
+}
+
+/* RIGHT TEAM (rounded right only) */
+.teamBwr {
+    background: linear-gradient(135deg, #eee, #eee);
+    border-radius: 0 12px 12px 0;
+    border: 1px solid #ccc;
+}
+
+/* VS center */
+.vswr {
+    padding: 8px 12px;
+    font-weight: bold;
+    
+    background: #eee;
+    border-radius: 8px;
+    margin: 0 6px;
+   
+}
+.cardwr {
+    background: #eee;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.rowwr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playerwr {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-innerwr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-innerwr img.avatar {
+    display:block !important;
+    z-index: 1;
+}
+
+.rightwr .player-innerwr {
+    
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.infowr {
+    display: flex;
+    flex-direction: column;
+}
+
+.namewr {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.scorewr {
+  font-family: Roboto Condensed;
+    font-size: 10px;
+
+    color: #000;
+}
+
+
+
+/* BUTTON AREA */
+.actionswr {
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+}
+
+.rightwr .actionswr {
+    justify-content: flex-end;
+}
+
+/* BUTTON STYLE */
+.btnwr {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.winwr {
+    background: black;
+    color: white;
+}
+
+.undowr {
+    background: #444;
+    color: #fff;
+}
+
+.btnwr:hover {
+    opacity: 0.85;
+} 
+
+/* button press */
+.presswr {
+    transform: scale(0.9);
+}
+
+/* floating pop text */
+.popwr {
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    animation: popAnimwr 0.8s ease forwards;
+    pointer-events: none;
+}
+
+/* animation */
+@keyframes popAnimwr {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* make parent relative */
+.actionswr {
+    position: relative;
+}
+.modalwr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-contentwr {
+    background: #eee;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.modal-actionswr {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.topbarwr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logowr {
+    width: 70px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.titlewr {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 1px;
+}
+
+
+ 

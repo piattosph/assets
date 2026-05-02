@@ -1,0 +1,141 @@
+
+ 
+      
+
+
+        /* --- Form & Results Styles (Unchanged) --- */
+        .buy-form {  padding: 2px; border-radius: 8px; }
+        .buy-form select, .buy-form button { margin-top: 10px; }
+        .buy-form button:disabled { background: var(--secondary-bg-color); cursor: not-allowed; }
+        .game-closed { background: var(--secondary-bg-color); color: var(-main-text-color); padding: 10px; border-radius: 5px; text-align: center; }
+
+        .results-section { background: var(--main-bg-color); padding: 2px; }
+        .results-section h3 { margin-top: 0; }
+        .results-section ul { margin-top:-1px; list-style: none; padding: 0; }
+        .results-section li { font-size: 12px; padding: 5px; border-bottom: 1px solid var(--main-border-color); }
+        .results-section .reward { font-weight: normal; color: var(--ending-winner-2); font-size: 0.9em; }
+        .results-section .status-paid { font-weight: bold; color: var(--ending-winner-2); }
+        .results-section .status-open { color: var(--main-button-color); font-style: italic; }
+
+        #message { padding: 10px; border-radius: 5px; margin-top: 10px; display: none; }
+        #message.success { background: #d4edda; color: #155724; }
+        #message.error { background: #f8d7da; color: #721c24; }
+        
+        /* --- *** NEW 3-COLUMN LIST STYLES *** --- */
+        .board-list {
+            list-style: none;
+            padding: 0;
+            
+            font-size: 8px;
+            margin:2px;
+            /* This is the simplest way to get 3 columns */
+            column-count: 5;
+            
+            
+            column-gap: 0;
+        }
+        
+        /* Responsive columns for mobile */
+     
+
+        .board-list li {
+            padding: 3px;
+            border-bottom: 1px solid var(--main-border-color);
+            display: flex; /* Use flex to align number and name */
+           font-family: Roboto Condensed; 
+            align-items: center;
+margin-right:0px;
+            /* This prevents list items from breaking across columns */
+            break-inside: avoid-column;
+            margin-right:-8px;
+            
+            page-break-inside: avoid;
+        }
+        .board-list .number {
+            font-weight: bold;
+            font-size: 10px;
+            color: var(--main-text-color);
+            margin-right: 5px;
+            padding:0;
+        }
+        .board-list .username {
+            color: var(--main-link-color);
+            font-weight: bold;
+            font-size: 9px;
+            /* Allow username to shrink if needed */
+            flex-shrink: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .board-list .available {
+            color: var(--main-text-color);
+            font-style: italic;
+            font-size: 8px;
+        }
+        .board-list li.winner {
+            background: var(--ending-winner); /* Bright yellow for winner */
+            border: 0.2px solid var(--secondary-border-color);
+            font-weight: normal;
+            max-width:60px;
+            
+            border-radius: 4px;
+        }
+    
+/*   games html */
+        .game-list { list-style: none; padding: 0; margin:0; }
+        .game-item { display: block; text-decoration: none; color: black; background: var(--main-bg-color); padding: 10px; margin-bottom: 4px; border: 1px solid var(--main-border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: all 0.2s ease-in-out; }
+        .game-item:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.1); transform: translateY(-2px); } 
+        .game-item h2 { margin: 0 0 5px 0; color: var(--main-link-color); }
+        .game-item p { margin: 5px 0; color: var(--main-text-color); }
+        .game-item .status { font-weight: bold; }
+        .status-open { color: #28a745; }
+        .status-closed { color: #dc3545; }
+        
+        /* --- NEW CSS FOR REWARDS --- */
+        .rewards-info {
+            display: flex;
+            justify-content: space-between;
+            background: var(--secondary-bg-color);
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 15px 0 10px 0;
+            font-size: 0.9em;
+        }
+        .rewards-info span {
+            font-weight: bold;
+            color: var(--main-text-color);
+        }
+        /* --- END NEW CSS --- */
+
+         
+        
+        .form-section { background: var(--secondary-bg-color); border: 1px solid var(--main-border-color); padding: 20px; border-radius: 8px; margin-top:5px;margin-bottom: 20px; }
+        .form-section h2 { margin-top: 0; }
+        .form-section label { display: block; margin-top: 10px; font-weight: bold; }
+        .form-section input[type="text"],
+        .form-section input[type="number"] { width: 95%; padding: 8px; }
+        .form-section button { padding: 10px 15px; background: #28a745; color: white; border: none; cursor: pointer; margin-top: 15px; font-size: 16px; }
+        .quarter-rewards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+        .quarter-box { background: var(--secondary-bg-color); padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .quarter-box.paid { background: var(--ending-winner); }
+        .quarter-box h3 { margin-top: 0; }
+        .quarter-box input[type="number"] { width: 100px; padding: 8px; }
+        .quarter-box button { padding: 8px 12px; background: #007bff; color: white; border: none; cursor: pointer; }
+        
+        #message { padding: 10px; border-radius: 5px; margin-top: 10px; display: none; }
+        #message.success { background: #d4edda; color: #155724; }
+        #message.error { background: #f8d7da; color: #721c24; }
+.datetime-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.datetime-inputs input {
+    width: 90% !important;
+}
+
+
+
+   

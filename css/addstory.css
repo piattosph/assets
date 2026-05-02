@@ -1,0 +1,210 @@
+    .story-compose-wrap {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .story-compose-card {
+        background: var(--main-bg-color);
+        border-radius: 18px;
+        padding: 16px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .story-upload-box {
+        margin-bottom: 16px;
+    }
+
+    .story-upload-label {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border: 2px dashed var(--main-border-color);
+        border-radius: 10px;
+        padding: 6px 6px 6px 13px;  
+        cursor: pointer;
+        background: var(--secondary-bg-color);
+        transition: 0.2s ease;
+    }
+
+    .story-upload-label:hover {
+        background: var(--main-bg-color);
+        border-color: var(--main-border-color);
+    }
+
+    .story-upload-label.selected {
+        border-color: #1877f2;
+        background: var(--main-bg-color);
+    }
+
+    .story-upload-icon {
+        width: 15px;
+        height: 15px;
+        border-radius: 14px;
+        background: var(--secondary-bg-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .story-upload-text strong {
+        display: block;
+        font-size: 10px;
+        color: var(--main-text-color);
+    }
+
+    .story-upload-text span {
+        display: block;
+        font-size: 13px;
+        color: var(--secondary-border-color);
+        margin-top: 2px;
+    }
+
+    #image {
+        display: none;
+    }
+
+    .story-preview {
+        margin-top: 14px;
+        width: 100%;
+        min-height: 50px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: var(--secondary-bg-color);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .story-preview img {
+        width: 100%;
+        height:100%;
+        max-height: 150px;
+        object-fit: contain;
+        display: block;
+        border-radius: 16px;
+    }
+
+    .story-field {
+        margin-bottom: 16px;
+    }
+
+    .story-field-label {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--main-text-color);
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .story-textarea {
+        width: 100%;
+        min-height: 40px;
+        border-radius: 14px;
+        border: 1px solid var(--secondary-border-color);
+        padding: 12px;
+        box-sizing: border-box;
+        resize: vertical;
+        background: var(--main-bg-color);
+       color:var(--main-text-color);
+    }
+    .story-textarea::placeholder{
+      color: var(--secondary-border-color);
+    }
+
+    .story-char-row {
+        margin-top: 6px;
+        font-size: 12px;
+        color: var(--main-text-color);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .story-pos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .story-radio-card {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--main-border-color);
+        background: var(--main-bg-color);
+        border-radius: 12px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .story-radio-card input {
+        margin: 0;
+    }
+
+    .story-radio-card span {
+        font-size: 12px;
+        color: var(--main-text-color);
+    }
+
+    .story-progress-wrap {
+        margin: 14px 0 16px;
+    }
+
+    .story-progress-bar {
+        width: 100%;
+        height: 12px;
+        background: var(--secondary-bg-color);
+        border-radius: 999px;
+        overflow: hidden;
+    }
+
+    .story-progress-fill {
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, #1877f2, #4ea1ff);
+        transition: width 0.2s ease;
+    }
+
+    .story-progress-text {
+        margin-top: 8px;
+        font-size: 13px;
+        color: var(--secondary-bg-color);
+    }
+
+    .story-submit-wrap {
+        margin-top: 10px;
+    }
+
+    .story-submit-btn {
+        width: 100%;
+        border-radius: 14px;
+        font-size: 15px;
+        padding: 13px 16px;
+    }
+
+    .story-submit-btn[disabled] {
+        opacity: .7;
+        cursor: not-allowed;
+    }
+
+    .story-alert {
+        border-radius: 14px;
+        padding: 12px 14px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .story-alert.success {
+        background: #eaf8ed;
+        color: #176c2e;
+        border: 1px solid #b7e2c1;
+    }
+
+    .story-alert.error {
+        background: #fff0f0;
+        color: #9f1f1f;
+        border: 1px solid #f0c3c3;
+    }
+    

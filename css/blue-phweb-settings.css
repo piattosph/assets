@@ -1,0 +1,135 @@
+   
+       .smiley-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 15px;
+            padding: 10px;
+            position: relative;
+            z-index:1;
+        }
+
+        .smiley-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid  var(--main-border-color);
+            border-radius: 8px;
+            background-color: var(--main-bg-color);
+            text-align: center;
+            transition: box-shadow 0.2s ease-in-out;
+            z-index:2;
+        }
+
+.smiley-item .avatar{
+  position:relative;
+width: 60px;
+height: 60px;
+  z-index: -1;
+  
+}
+
+
+.smiley-item div[style*="background"] {
+	width: 80px!important;
+	height: 80px!important;
+	position: relative;
+	border-radius: 10px
+}
+
+.smiley-item div[style*="background"]::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 75%;
+	height: 75%;
+	transform: scale(1.5);
+	background: inherit;
+	background-size: 75% 75%!important;
+	background-repeat: no-repeat!important;
+	background-position: center!important;
+	z-index: 99;
+	border-radius: 0
+}
+
+
+
+        .smiley-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .smiley-img {
+            max-width: 48px;
+            height: auto;
+            margin-bottom: 8px;
+        }
+
+        .smiley-code { 
+          font-family: Roboto Condensed;
+            font-size: 0.7em;
+            color: var(--main-text-color);
+            word-break: break-all;
+            margin-bottom: 10px;
+            min-height: 1.2em; /* Reserve space for code */
+        }
+        
+        .delete-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            text-decoration: none;
+            color: #aaa;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .delete-btn:hover {
+            color: #d9534f;
+        }
+
+        .favorite-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid var(--secondary-border-color);
+            border-radius: 5px;
+            background-color: var(--secondary-bg-color);
+            cursor: pointer;
+            font-size: 0.8em;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        
+        .favorite-btn .heart {
+            color: #ccc;
+            margin-right: 5px;
+            transition: color 0.2s;
+        }
+
+        .favorite-btn:hover {
+            background-color: var(--secondary-border-color);
+        }
+        
+        /* Style for favorited state */
+        .favorite-btn.favorited {
+            background-color: var(--main-border-color);
+            border-color: var(--secondary-border-color);
+            color: var(--main-text-color);
+        }
+        
+        .favorite-btn.favorited .heart {
+            color: #fb1958; /* Hot pink heart */
+        }
+        
+        .content-message.success {
+            padding: 10px;
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            color: #3c763d;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+    

@@ -1,0 +1,144 @@
+
+    .admin-container { max-width: 900px; margin: auto; background: var(--main-bg-color); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .admin-form label { display: block; margin: 10px 0 5px; }
+    .admin-form input { width: 100%; padding: 8px; box-sizing: border-box; }
+    .admin-form button { margin-top: 20px; padding: 10px 15px; background-color: var(-main-border-color); color: white; border: none; cursor: pointer; }
+    .admin-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .admin-table th, .admin-table td { padding: 12px; border: 1px solid var(--main-border-color); text-align: left; }
+    .admin-table th { background-color: var(--secondary-bg-color); }
+    .admin-table .btn-edit, .admin-table .btn-remove { padding: 5px 10px; color: var(--main-text-color); text-decoration: none; border-radius: 3px; }
+    .btn-bedit { background-color: #007bff; }
+    .btvn-remove { background-color: #dc3545; }
+    .messbage { padding: 15px; margin-bottom: 20px; border-radius: 5px; color: #fff; }
+    .mesvsage.sbuccess { background-color: #28a745; }
+    .mesbsage.errbor { background-color: #dc3545; }
+
+
+
+
+   
+
+        .container-gift { max-width: 600px; margin: auto; background: var(--main-bg-color); padding: 10px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+      /* 1. Make the list a vertical column */
+.gift-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+   /* Spacing between items */
+   gap:3px;
+    margin-bottom: 2px;
+}
+
+/* 2. Style each list item as a flex row */
+.gift-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This pushes the info (left) and button (right) apart */
+    margin:0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for padding + width: 100% */
+}
+.gift-item:hover, .gift-item.selected {
+    border-color: var(--secondary-bg-color); /* Keep your hover effect */
+}
+
+/* 3. Style the left-side info group */
+.gift-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin:0;
+    
+    /* Space between image and text */
+}
+
+/* 4. Your existing image style is fine, just remove the margin-bottom */
+.gift-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    
+}
+
+/* 5. Style the text details */
+.gift-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin:0;
+}
+
+/* 6. Adjust the button */
+.gift-item .button-gift {
+    margin-top: 0; /* Remove the top margin */
+    width: auto;   /* CRITICAL: Change from width: 100% */
+    flex-shrink: 0; /* Prevents the button from shrinking */
+
+    /* Your existing styles below */
+    padding: 5px 10px;
+    border: 1px solid var(--secondary-border-color);
+    background-color: var(--main-border-color);
+    color: var(--main-text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.gift-item .button-gift:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+        .gift-item input { display: none; } /* Hide radio button */
+        .message-gift { padding: 15px; margin-bottom: 20px; border-radius: 5px; color: var(--main-text-color); }
+        .message-gift.success { background-color: #28a745; }
+        .message-gift.error { background-color: #dc3545; }
+        form div { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        select-gift, button-gift { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid var(--main-border-color); }
+        button-gift { background-color: var(--secondary-border-color); color: white; font-weight: bold; cursor: pointer; }
+        
+    
+   
+  
+    
+   
+            
+            .container-gift2 { max-width: 800px; margin: auto; background: var(--main-bg-color); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            .profile-header2 { text-align: center; border-bottom: 1px solid var(--main-border-color); padding-bottom: 20px; margin-bottom: 20px; }
+            .leaderboard-link2 { text-align: center; margin-bottom: 20px; }
+            .gift-grid2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 10px; }
+            .gift-card2 { text-align: center; background-color: var(--secondary-bg-color); font-size:9px; padding: 10px 1px; border-radius: 8px; border: 1px solid var(--main-border-color); }
+            .gift-card2 img { width: 35px; height: 35px; object-fit: cover; margin-bottom: 10px; }
+            .gift-card2 .gift-name2 { font-weight: bold; }
+            .gift-card2 .gift-count2 { font-size: 1.2em; color: var(--main-text-color); margin-top: 5px; }
+            .no-gifts2 { text-align: center; color: var(--main-text-color); padding: 20px; }
+        
+        
+        
+       
+            .container-gift3 { max-width: 600px; margin: auto; background: var(--main-bg-color); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            .leaderboard-gift3 h2 { text-align: center; border-bottom: 1px solid var(--main-border-color); padding-bottom: 10px; margin-top: 0; }
+            .leaderboard-gift3 ol { list-style-type: none; padding: 0; }
+            .leaderboard-gift3 li { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid var(--main-border-color); }
+            .leaderboard-gift3 li:last-child { border-bottom: none; }
+            .rank-gift3 { font-size: 1.2em; font-weight: bold; color: var(--main-text-color); width: 40px; }
+            .username-gift3 { font-weight: bold; flex-grow: 1; }
+            .score-gift3 { font-size: 1.1em; color: var(--main-text-color); }
+            .score-label-gift3 { font-size: 0.8em; color: var(--main-text-color); margin-left: 5px; }
+            .no-gifts-gift3 { text-align: center; color: var(--main-text-color); padding: 20px; } 
+            
+            
+            
+            
+  .equipped-gifts-section { text-align: center; margin-bottom: 10px; padding-bottom: 10px; }
+        .equipped-gifts-display { display: flex; justify-content: center; gap: 15px; margin-top: 10px; min-height: 27px; }
+        .equipped-gifts-display img { width: 25px; height: 25px;  border-radius: 50%; padding: 3px; }
+        .equipped-gifts-display .placeholder { width: 25px; height: 25px; background-color: var(--secondary-bg-color); border-radius: 50%; border: 2px dashed var(--secondary-border-color); }
+        
+        
+             .btn-equip { background-color: var(--main-border-color); border:1px solid; border-radius:10px; border-color: var(--secondary-border-color); color: var(--main-text-color); }
+        .btn-unequip { background-color: var(--main-border-color); 
+        border:1px solid; border-radius:10px; border-color: var(--secondary-border-color); color: var(--main-text-color); }
+        .btn-equip:disabled { background-color: var(--secondary-bg-color); border-color: var(--main-border-color); color: var(--main-text-color); cursor: not-allowed; }

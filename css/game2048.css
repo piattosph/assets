@@ -1,0 +1,225 @@
+
+:root{
+  --g2048-board-size: min(85vw, 490px);
+  --g2048-grid: 4;
+  --g2048-gap-ratio: 0.04; /* used only for visual CSS fallback */
+  --g2048-bg: #faf8ef;
+}
+#g2048-container {margin:0;padding:0;box-sizing:border-box}
+#g2048-container{background:var(--main-bg-color);width:100%;max-width:480px; padding:1px;}
+#g2048-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+#g2048-title{font-size:28px;font-weight:700;color:#776e65;margin:0}
+#g2048-scorebox{display:flex;gap:12px;align-items:center}
+.g2048-score{background:#eee4da;padding:8px 12px;border-radius:6px;font-weight:700;color:#776e65}
+#g2048-board-wrapper{width:var(--g2048-board-size);margin:0 auto}
+#g2048-board{
+  width:100%;
+  margin:0;padding:0;box-sizing:border-box;
+  /* height will be matched to width in JS */
+  background:#bbada0;
+  border-radius:12px;
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(4,1fr);
+  gap: calc(var(--g2048-board-size) * var(--g2048-gap-ratio));
+  padding: calc(var(--g2048-board-size) * var(--g2048-gap-ratio));
+  overflow: visible;
+}
+.g2048-cell{background:#cdc1b4;border-radius:6px} 
+
+/* ADD/REPLACE THESE IN YOUR <style> BLOCK */
+
+/* This replaces the old .g2048-tile-merge */
+.g204b8-tile-pop {
+  animation: pop 50ms ease-out;
+}
+
+/* This is the same pop animation */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* --- UPDATE YOUR .g2048-tile RULE ---
+  Replace your existing .g2048-tile rule with this one.
+  The key change is the 'transition' property.
+*/
+.g2048-tile {
+  position: absolute;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  
+  user-select: none;
+  touch-action: none;
+  
+  /* --- UPDATED TRANSITION --- */
+  /* This now handles movement (transform), spawning (opacity),
+     and the pop (scale, which is part of transform) */
+  transition: transform 100ms cubic-bezier(.2,.8,.2,1), 
+              opacity 100ms ease-out;
+}
+
+.g2048-tile[data-value="2"]{background:#eee4da;color:#776e65}
+.g2048-tile[data-value="4"]{background:#ede0c8;color:#776e65}
+.g2048-tile[data-value="8"]{background:#f2b179;color:#f9f6f2}
+.g2048-tile[data-value="16"]{background:#f59563;color:#f9f6f2}
+.g2048-tile[data-value="32"]{background:#f67c5f;color:#f9f6f2}
+.g2048-tile[data-value="64"]{background:#f65e3b;color:#f9f6f2}
+.g2048-tile[data-value="128"]{background:#edcf72;color:#f9f6f2}
+.g2048-tile[data-value="256"]{background:#edcc61;color:#f9f6f2}
+.g2048-tile[data-value="512"]{background:#edc850;color:#f9f6f2}
+.g2048-tile[data-value="1024"]{background:#edc53f;color:#f9f6f2}
+.g2048-tile[data-value="2048"]{background:#edc22e;color:#f9f6f2}
+#g2048-controls{display:flex;gap:10px;align-items:center;margin-top:12px}
+#g2048-restart{background:#8f7a66;color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+#g2048-modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:12px;z-index:999;display:none}
+#g2048-modal .content{background:var(--g2048-bg);padding:20px;border-radius:8px;text-align:center;min-width:220px}
+
+
+
+/* The Modal Overlay
+  - Hidden by default
+  - Sits on top of all content
+  - Fills the whole screen
+  - Uses 'flex' to center the content
+*/
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place */
+    z-index: 1000; /* On top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ transparency */
+
+    /* Flexbox properties to center the content */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Your Leaderboard Container (as the modal content)
+  - We make its position 'relative' so we can
+    position the close button inside it.
+*/
+
+/* The Close Button (the 'x')
+*/
+.close-button {
+    color: #aaa;
+    position: absolute; /* Positions it relative to .leaderboard-container */
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+    
+        :root {
+            --g2048-bg: #faf8ef;
+            --text-dark: #776e65;
+            --text-light: #f9f6f2;
+            --accent-1: #bbada0;
+            --accent-2: #eee4da;
+        }
+        
+        
+        
+        
+        
+        
+        
+        .leaderboard-container {
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--secondary-bg-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 20px 30px;
+            margin:10px;
+            border:1px solid var(--secondary-border-color);
+            max-height: 70vh; 
+    /* This is the magic! It adds a scrollbar *inside* the container */
+    overflow-y: auto; 
+            
+            
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+        thead tr {
+            background-color: var(--main-border-color);
+            border-bottom: 2px solid var(--secondary-border-color);
+        }
+        th {
+            font-weight: 700;
+        }
+        tbody tr:nth-child(even) {
+            background-color: var(--main-border-color);
+        }
+        tbody tr.current-user {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            font-weight: bold;
+        }
+        td.rank {
+            font-weight: 700;
+            font-size: 1.1em;
+            text-align: center;
+            width: 50px;
+        }
+        td.score {
+            font-weight: 700;
+            text-align: right;
+        }
+        .loader {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+        }
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #d9534f;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+
+
+
+
+
